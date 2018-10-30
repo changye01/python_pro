@@ -211,4 +211,3 @@ thisset = set(("Google", "Runoob", "Taobao"))
 # 将元素 x 添加到集合 s 中，如果元素已存在，则不进行任何操作。
 thisset.add('linxiansheng')
 print(thisset)
-print('realtest')
