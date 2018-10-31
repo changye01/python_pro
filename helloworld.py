@@ -210,5 +210,45 @@ print(a ^ b)
 thisset = set(("Google", "Runoob", "Taobao"))
 # 将元素 x 添加到集合 s 中，如果元素已存在，则不进行任何操作。
 thisset.add('linxiansheng')
+thisset.add('wula')
+thisset.update({1,3})
+thisset.update([2,4],[6,5])
 print(thisset)
-print('realtest')
+
+thisset = set(("Google", "Runoob", "Taobao"))
+# 将元素 x 从集合 s 中移除，如果元素不存在，则会发生错误。
+thisset.remove('Google')
+# 此外还有一个方法也是移除集合中的元素，且如果元素不存在，不会发生错误。
+thisset.discard('Taobao')
+print(thisset)
+
+thisset = set(("Google", "Runoob", "Taobao"))
+print(thisset)
+# 清空集合
+thisset.clear()
+x = thisset.pop()
+print(thisset)
+print(x)
+
+a, b = 0, 1
+while b < 10:
+    print(b)
+    a, b = b, a+b
+
+a, b = 0, 1
+while b < 1000:
+    # 关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符
+    print(b, end=',')
+    a, b = b, a+b
+
+age = int(input("请输入你家狗狗的年龄: "))
+
+n = 100
+sum = 0
+counter = 1
+while counter <= n:
+    sum = sum + counter
+    counter += 1
+ 
+print("1 to %d sum is: %d" % (n,sum))
+
