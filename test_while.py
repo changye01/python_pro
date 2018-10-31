@@ -8,3 +8,9 @@ print ("Good bye!")
 # 你可以使用 CTRL+C 来退出当前的无限循环。
 
 # 无限循环在服务器上客户端的实时请求非常有用。
+
+flag = 1
+ 
+while (flag): print ('欢迎访问菜鸟教程!')
+ 
+print ("Good bye!")

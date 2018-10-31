@@ -252,3 +252,104 @@ while counter <= n:
  
 print("1 to %d sum is: %d" % (n,sum))
 
+count = 0
+while count < 5:
+   print (count, " 小于 5")
+   count = count + 1
+else:
+   print (count, " 大于或等于 5")
+   
+
+sites = ["Baidu", "Google","Runoob","Taobao"]
+for site in sites:
+    if site == "Runoob":
+        print("菜鸟教程!")
+        break
+    print("循环数据 " + site)
+else:
+    print("没有循环数据!")
+print("完成循环!")
+
+# for i in range(5):
+# 以使用range指定区间的值：
+# for i in range(5,9) :
+# 可以使range以指定数字开始并指定不同的增量(甚至可以是负数，有时这也叫做'步长'):
+for i in range(0, 10, 3):
+# for i in range(-10, -100, -30) :
+    print (i)
+
+a = ['Google', 'Baidu', 'Runoob', 'Taobao', 'QQ']
+for i in range(len(a)):
+    print (i,a[i])
+
+# 循环语句可以有 else 子句，它在穷尽列表(以for循环)或条件变为 false (以while循环)导致循环终止时被执行,但循环被break终止时不执行。
+
+# 还可以使用range()函数来创建一个列表：
+# list(range(5))
+
+
+# 迭代器是一个可以记住遍历的位置的对象。    
+
+# 迭代器对象从集合的第一个元素开始访问，直到所有的元素被访问完结束。迭代器只能往前不会后退。
+# 字符串，列表或元组对象都可用于创建迭代器
+list=[1,2,3,4]
+it = iter(list)    # 创建迭代器对象
+for x in it:
+    print (x, end=" ")
+
+import sys
+list=[1,2,3,4]
+it = iter(list)
+print (next(it))
+while True:
+    try:
+        print (next(it))
+    except StopIteration:
+        sys.exit()
+
+
+def area(width, height):
+    return width * height
+ 
+def print_welcome(name):
+    print("Welcome", name)
+ 
+print_welcome("Runoob")
+w = 4
+h = 5
+print("width =", w, " height =", h, " area =", area(w, h))
+
+a=[1,2,3]
+a="Runoob"
+
+# 以上代码中，[1,2,3] 是 List 类型，"Runoob" 是 String 类型，而变量 a 是没有类型，她仅仅
+# 是一个对象的引用（一个指针），可以是指向 List 类型对象，也可以是指向 String 类型对象。
+
+# 加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数
+#!/usr/bin/python3
+  
+# 可写函数说明
+def printinfo( arg1, *vartuple ):
+   "打印任何传入的参数"
+   print ("输出: ")
+   print (arg1)
+   print (vartuple)
+ 
+# 调用printinfo 函数
+printinfo( 70, 60, 50 )
+
+# 加了两个星号 ** 的参数会以字典的形式导入。
+def printinfo1(arg1, **vardict ):
+    #    "打印任何传入的参数"
+    print ("输出: ")
+    print (arg1)
+    print (vardict)
+ 
+# 调用printinfo 函数
+printinfo1(1, a=2,b=3)   
+
+# 如果单独出现星号 * 后的参数必须用关键字传入。
+# 不使用的话会报错
+def f(a,b,*,c):
+    return a+b+c
+f(1,2,c=3)
