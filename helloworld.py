@@ -348,7 +348,7 @@ def printinfo1(arg1, **vardict ):
 # 调用printinfo 函数
 printinfo1(1, a=2,b=3)   
 
-# 如果单独出现星号 * 后的参数必须用关键字传入。
+# 如果单独出现星号 * 后的参数必须用关键字传入
 # 不使用的话会报错
 def f(a,b,*,c):
     return a+b+c
