@@ -94,7 +94,7 @@ del(a[:])
 print(a)
 del a
 
-#a以删除 会报错
+#a已删除 会报错
 print(a)
 ##
 # 元组
