@@ -1,0 +1,1 @@
+I am learning python ,please tell me is write success('www.one.com', 14)
