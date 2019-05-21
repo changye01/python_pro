@@ -29,6 +29,13 @@ class Fraction:
         common = gcd(newNum, newDen)
         return Fraction(newNum / common, newDen / common)
 
+    def __radd__(self, otherfraction):
+        return self + otherfraction
+
+    def __iadd__(self, other):
+        self = self + other
+        return self
+
 
 def gcd(m, n):
     if n == 0:
@@ -44,4 +51,4 @@ def gcd(m, n):
 # print(str(myf))
 # myf = Fraction(1, 4) + Fraction(1, 2)
 # print(myf)
-print(Fraction(1, 3) / Fraction(1, 3))
+print(Fraction(1, 3) .__radd__(Fraction(1, 3)))
